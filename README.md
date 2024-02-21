@@ -6,6 +6,9 @@ Welcome to the **100 Days of JavaScript** challenge! This repository is dedicate
 ## Objective
 The main objective of this challenge is to commit to learning and practicing JavaScript every day for 100 days. By dedicating time each day to coding exercises, projects, and learning resources, I'll gradually build a strong foundation in JavaScript programming and develop my problem-solving abilities.
 
+## Day
+1. Counter
+
 ## Resources
 - Ewomazino Akpareva from Udemy
 
