@@ -147,10 +147,10 @@ header h1 span {
 }
 
 @keyframes slide {
-  from{
+  0%{
     transform: translateY(-30);
   }
-  to{
+  100%{
     transform: translateY(30s);
   }
 }
