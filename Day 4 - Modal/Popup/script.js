@@ -1,5 +1,6 @@
 // variables
 const modal = document.querySelector(".modal"),
+modalContent =document.querySelector("modal-content")
     btn = document.querySelector("btn"),
     close = document.querySelector(".close");
 
@@ -15,6 +16,10 @@ function openModal(e){
 
 // Close Modal
 function closeModal(){
-    
-    modal.style.display = "nones";
+    modalContent.classList.add("slide-up");
+    setTimeout(() => {
+        modal.style.display = "nones";
+        modalContent.classList.remove("slide-up");
+
+    }, 500);
 }
