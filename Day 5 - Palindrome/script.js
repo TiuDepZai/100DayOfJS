@@ -8,9 +8,21 @@ function palindrome(){
 
     let start = result.substring(0,Math.floor(length/2)).toLowerCase();
 
-    alert(start);
-    let end = result.substring(Math.upper(length/2), length)
+    // alert(start);
+    let end = result.substring(length - Math.floor(length/2)).toLowerCase();
 
 
+    // old way to do it
+    // let flip = end.split("").reverse().join("");
+    let flip = [...end].reverse().join("");
 
+
+    if (start == flip){
+        result.innerhtml = `${word.toUpperCase()} is a palidrome`;
+
+    }
+    else{
+        result.innerhtml = `${word.toUpperCase()} is not a palidrome`;
+
+    }
 }
