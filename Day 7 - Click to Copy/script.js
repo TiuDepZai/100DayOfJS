@@ -10,13 +10,13 @@ const copy = (e) =>{
     // coupon.setSelectionRange(0,-1);
     // document.execCommand("copy");
 
-    navigator.clipboard.writeText(coupon)
-
-
-    btn.textContent = "Copied";
-    setTimeout(() => {
-        btn.textContent = "Copy";
-    }, 3000)
+    navigator.clipboard.writeText(coupon.value)
+        .then(() =>{
+            btn.textContent = "Copied";
+             setTimeout(() => {
+                btn.textContent = "Copy";
+            }, 3000);
+        });
 }
 
 
